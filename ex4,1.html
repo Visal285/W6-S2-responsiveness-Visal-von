@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex4</title>
+    <body>
+    <style>
+      
+.small {
+    display: none;
+    background: tomato;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 22px;
+}
+
+.big {
+    display: inline-block;
+    background: lightgreen;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 28px;
+}
+
+@media only screen and (max-width: 768px) {
+    .big {
+        display: none;
+    }
+    .small {
+        display: inline-block;
+    }
+}
+
+    </style>
+    <div class="wrapper">
+        <div class="content">
+            <span class="small">I'm SMALL</span>
+            <span class="big">I'm BIG </span>
+        </div>
+    </div>
+
+
+
+        
+    </body>
+
+</html>
